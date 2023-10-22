@@ -1,9 +1,13 @@
 .contenedorItem {
+    width: 550px;
+    height: 550px;
     text-align: center;
-    border: 1px solid black;
-    margin: 3rem;
+    border: 2px solid rgb(173, 5, 5);
+    margin: 4rem;
+    margin-left: 700px;
 }
 
 img {
-    width: 35vw;
+    width: 20vw;
+
 }

@@ -10,8 +10,6 @@ const Item = ({id, nombre, precio, img}) => {
         <p>ID: {id} </p>
         <Link to={`/item/${id}`} className='botondetalles'> Ver Detalles </Link>
 
-        {/* <button> Ver Detalles </button> */}
-
     </div>
   )
 }
