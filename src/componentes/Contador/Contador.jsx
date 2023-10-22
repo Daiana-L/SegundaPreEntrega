@@ -1,8 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 const Contador = ({inicial, stock, funcionAgregar}) => {
     const [contador, setContador] = useState(inicial);
 
+
+    
 
     const sumarContador = () => {
         if(contador < stock){

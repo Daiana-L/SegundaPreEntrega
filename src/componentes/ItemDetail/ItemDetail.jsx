@@ -1,11 +1,18 @@
+/* eslint-disable react/prop-types */
 import './ItemDetail.css'
-import { useState } from 'react'
+import {  useState  } from 'react'
 import Contador from '../Contador/Contador'
 const ItemDetail = ({id, nombre, stock, precio, img}) => {
-  const [agregarCantidad, setAgregarCantidad] = useState(0)
 
-const manejadorCantidad = (cantidad) =>{
-  setAgregarCantidad(cantidad);
+  console.log({id, nombre, stock, precio, img} )
+
+
+  const [cantidad, setCantidad] = useState(0)
+
+
+
+const addToCart = (cantidad) =>{
+  setCantidad(cantidad);
   console.log("Productos agregados:" + cantidad);
 }
 
@@ -18,8 +25,8 @@ const manejadorCantidad = (cantidad) =>{
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam hic molestiae laudantium non provident maxime magni debitis sapiente! Pariatur illum tempore excepturi asperiores, officiis magnam ex placeat quibusdam necessitatibus?</p>
 
     {
-      agregarCantidad > 0 ? (<link to="/cart">Terminar Compra</link>) : (<Contador inicial={1} 
-        stock={stock} funcionAgregar={manejadorCantidad}/>)
+      cantidad > 0 ? (<link to="/cart">Terminar Compra</link>) : (<Contador inicial={1} 
+        stock={stock} funcionAgregar={addToCart}/>)
     }
 
 
