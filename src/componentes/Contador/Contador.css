@@ -1,0 +1,22 @@
+.suma{
+    height: 40px;
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+}
+
+.contador{
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+
+.agregar{
+    background-color: rgb(150, 11, 11);
+    color: aliceblue;
+    border: none;
+    height: 50px;
+    font-size: 19px;
+    border-radius: 15px;
+}

@@ -1,0 +1,41 @@
+.fin{
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(192, 7, 32);
+    margin-left: 100px;
+    padding: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.vacio{
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(192, 7, 32);
+    margin-left: 20px;
+    padding: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ver{
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(192, 7, 32);
+    margin-left: 850px;
+    padding: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.noHayProductos{
+    margin-left: 700px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}

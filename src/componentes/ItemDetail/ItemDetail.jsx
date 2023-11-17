@@ -1,19 +1,25 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import './ItemDetail.css'
 import {  useState  } from 'react'
 import Contador from '../Contador/Contador'
+import { Link } from 'react-router-dom'
+import {CarritoContext} from '../../context/CarritoContext'
+import { useContext } from 'react'
+
+
 const ItemDetail = ({id, nombre, stock, precio, img}) => {
-
-  console.log({id, nombre, stock, precio, img} )
-
 
   const [cantidad, setCantidad] = useState(0)
 
-
+const {agregarAlCarrito} = useContext(CarritoContext);
+console.log(agregarAlCarrito)
 
 const addToCart = (cantidad) =>{
   setCantidad(cantidad);
   console.log("Productos agregados:" + cantidad);
+  const item = {id , nombre, precio};
+  agregarAlCarrito(item , cantidad);
 }
 
   return (
@@ -25,7 +31,7 @@ const addToCart = (cantidad) =>{
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam hic molestiae laudantium non provident maxime magni debitis sapiente! Pariatur illum tempore excepturi asperiores, officiis magnam ex placeat quibusdam necessitatibus?</p>
 
     {
-      cantidad > 0 ? (<link to="/cart">Terminar Compra</link>) : (<Contador inicial={1} 
+      cantidad > 0 ? (<Link to="../cart" className='terminarCompra' >Terminar Compra! </Link>) : (<Contador inicial={1} 
         stock={stock} funcionAgregar={addToCart}/>)
     }
 
