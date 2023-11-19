@@ -1,4 +1,8 @@
 .buttom{
-background-color: blue;
-
+    font-size: 19px;
+    text-decoration: none;
+    background-color: rgb(165, 8, 8);
+    color: black;
+    border-radius: 5px;
+    color: aliceblue;
 }

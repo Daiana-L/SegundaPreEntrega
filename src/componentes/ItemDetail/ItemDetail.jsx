@@ -13,11 +13,11 @@ const ItemDetail = ({id, nombre, stock, precio, img}) => {
   const [cantidad, setCantidad] = useState(0)
 
 const {agregarAlCarrito} = useContext(CarritoContext);
-console.log(agregarAlCarrito)
+(agregarAlCarrito)
 
 const addToCart = (cantidad) =>{
   setCantidad(cantidad);
-  console.log("Productos agregados:" + cantidad);
+
   const item = {id , nombre, precio};
   agregarAlCarrito(item , cantidad);
 }
