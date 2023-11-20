@@ -5,6 +5,7 @@ import NavBar from './componentes/NavBar/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {CarritoProvider} from './context/CarritoContext';
 import Cart from './componentes/cart/cart';
+import {Checkout} from './componentes/Checkout/Checkout';
 
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
           <Route path='/categoria/:idCategoria' element={ <Productos/> }  />
           <Route path='/item/:idItem' element={ <ItemDetailContainer/> } />
           <Route path='/cart' element={<Cart/>} />
-          <Route path='*' element={<h2>sitio en construccion</h2>} />
+          <Route path='/Checkout' element={<Checkout/>} />
         </Routes>
         /</CarritoProvider>
       </BrowserRouter>
